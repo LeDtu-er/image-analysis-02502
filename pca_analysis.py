@@ -59,4 +59,5 @@ def pca_analysis(path, dtype = "txt", skl = True):
         
         pc_proj = eig_vectors.T.dot(data.T)
     
+    # MIGHT fail... for some reason the f22 set doesn't give the right answer
     return eig_values, eig_vectors, v_explained, pc_proj
